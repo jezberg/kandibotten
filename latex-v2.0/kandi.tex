@@ -1,0 +1,84 @@
+\documentclass[swedish]{tktltiki}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{url}
+\usepackage{listings}
+\usepackage{tcolorbox}
+%\usepackage{refcheck}
+\usepackage{graphicx}
+\usepackage{amsthm}
+\theoremstyle{definition}
+\newtheorem{example}{Exempel}[section]
+%Path in Unix-like (Linux, OsX) format
+%\graphicspath{ {/home/user/images/} }
+\tcbuselibrary{listings,skins}
+\lstdefinestyle{styleC}{
+	numbers=left, 
+	numberstyle=\small, 
+	numbersep=19pt, 
+    tabsize=4,
+	language=C
+}
+\newtcblisting{programkod}[2][]{
+    arc=0pt,
+    outer arc=0pt,
+    listing only, 
+    listing style=styleC,
+    title=#2,
+    #1
+}
+\lstdefinestyle{stylePseudo}{
+	numbers=left, 
+	numberstyle=\small, 
+	numbersep=19pt, 
+    tabsize=4,
+	language=python
+}
+\newtcblisting{pseudokod}[2][]{
+    arc=0pt,
+    outer arc=0pt,
+    listing only, 
+    listing style=stylePseudo,
+    title=#2,
+    #1
+}
+\begin{document}
+
+\onehalfspacing
+\title{Rubrik}
+\author{Studerande}
+\date{\today}
+\level{Kandidatsavhandling}
+\maketitle
+\numberofpagesinformation{{\numberofpages\ sidor + \numberofappendixpages\ bilagor}}
+\classification{ACM: Kategorier}
+\keywords{nyckelord}
+
+\begin{abstract}
+	ABSTRAKTET
+
+\end{abstract}
+\mytableofcontents
+
+\section{Inledning} 
+
+
+\subsection{DELSTYCKE}
+
+\section{ANDRA STYCKE} \label{invariants}
+
+\section{Sammanfattning} \label{summary}
+
+SAMMANFATTNING
+
+\nocite{*}
+% yksi näistä tai ...
+%\bibliographystyle{plain}
+%\bibliographystyle{acm}
+\bibliographystyle{ieeetr}
+% ... tai tämä 
+%\bibliographystyle{apalike}
+\bibliography{kandi_kallor}
+\lastpage
+\appendices
+\end{document}
