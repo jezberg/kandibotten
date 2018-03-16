@@ -317,7 +317,7 @@
 
 \addto\captionsfinnish{%
   \faculty{Matemaattis-luonnontieteellinen tiedekunta}
-  \department{Tietojenkäsittelytieteen laitos}%
+  \department{Tietojenkäsittelytieteen osasto}%
   \subject{Tietojenkäsittelytiede}
 }
 \addto\captionsenglish{%
@@ -327,7 +327,7 @@
 }
 \addto\captionsswedish{%
   \faculty{Matematisk-naturvetenskapliga fakulteten}
-  \department{Institutionen för datavetenskap}%
+  \department{Avdelningen för datavetenskap}%
   \subject{Datavetenskap}
 }
 \newsavebox{\@abstract}
